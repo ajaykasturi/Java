@@ -29,7 +29,11 @@ public class KMostFrequentItemsMethod1 {
         
         List<Map.Entry<Integer,Integer>> list=new ArrayList<>(m.entrySet());
         Collections.sort(list,new MyCmp());
+        //printing all the items
         for(int i=0;i<list.size();i++)
+            System.out.println(list.get(i).getKey()+":"+list.get(i).getValue());
+        //printing k most frequent items
+        for(int i=0;i<k;i++)
             System.out.println(list.get(i).getKey()+":"+list.get(i).getValue());
     }
     public static void main(String[] args)
