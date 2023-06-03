@@ -1,5 +1,4 @@
-
-package app;
+//find k most frequent items in the array method-1
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
